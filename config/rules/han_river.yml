@@ -1,0 +1,13 @@
+name: han_river
+active: true
+
+hear: /^\s*냥 한강\s*$/
+reaction: 우는냥
+
+actions:
+  - name: testbot
+    type: exec
+    cmd: test_bot/bin/test_bot han_river
+
+format_output: '${_exec_output}'
+start_message_thread: true

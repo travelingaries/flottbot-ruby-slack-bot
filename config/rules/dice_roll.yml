@@ -1,0 +1,15 @@
+name: roll
+active: true
+
+hear: /^\s*냥 (굴려|던져)\s*$/
+reaction: loading
+
+actions:
+  - name: testbot
+    type: exec
+    cmd: test_bot/bin/test_bot dice_roll ${_user.displayname}
+    update_reaction: game_die
+
+format_output: '${_exec_output}'
+
+start_message_thread: false

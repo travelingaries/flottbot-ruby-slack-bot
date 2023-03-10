@@ -1,0 +1,15 @@
+name: battle
+active: true
+
+hear: /^\s*냥\s+배틀\s*/
+
+actions:
+  - name: testbot
+    type: exec
+    cmd: env SLACK_ID=${_user.id} test_bot/bin/test_bot battle ${_raw_user_input}
+    timeout: 60
+    update_reaction: 칼든정원
+
+format_output: '${_exec_output}'
+
+start_message_thread: true

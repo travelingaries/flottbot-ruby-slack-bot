@@ -1,0 +1,4 @@
+/.idea/
+/flottbot
+/log/*.log
+config/credentials

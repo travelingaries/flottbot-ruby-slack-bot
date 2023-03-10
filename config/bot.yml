@@ -1,0 +1,5 @@
+name: testbot
+cli: true
+chat_application: slack
+slack_token: ${SLACK_TOKEN}
+slack_app_token: ${SLACK_APP_TOKEN}

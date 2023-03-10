@@ -1,0 +1,11 @@
+name: bye
+active: true
+
+hear: /^냥 퇴근\s*(할게|)(~|!|)$/
+format_output: "${_user.displayname}님 오늘도 고생했어요~ :goodbye:"
+reaction: goodbye
+
+start_message_thread: true
+
+help_text: bye
+include_in_help: true
