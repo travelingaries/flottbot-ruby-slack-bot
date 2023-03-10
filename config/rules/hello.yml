@@ -1,0 +1,11 @@
+name: hello
+active: true
+
+hear: /^\s*냥 안녕(|~|!)\s*$/
+format_output: ":meow_peek: ${_user.displayname}님 안녕하세요~"
+reaction: meow_peek
+
+start_message_thread: true
+
+help_text: hello
+include_in_help: true
